@@ -9,5 +9,17 @@ class LoadingStateViewHolder(
     private val binding: ItemProgressBinding
 ) : ListStateViewHolder(binding.root) {
 
+    constructor(
+        layoutInflater: LayoutInflater,
+        parent: ViewGroup? = null,
+        attachToRoot: Boolean = false
+    ) : this(
+        ItemProgressBinding.inflate(
+            layoutInflater,
+            parent,
+            attachToRoot
+        )
+    )
+
     override fun bind(loadState: LoadState) {}
 }
