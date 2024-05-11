@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="base_margin_for_pokemons_list_views">8dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_margin">4dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_image_width">60dp</dimen>
+    <dimen name="card_image_height">60dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="card_corner_size">5dp</dimen>
+
+    <dimen name="card_text_view_style_margin_horizontal">10dp</dimen>
+    <dimen name="card_text_view_style_margin_vertical">4dp</dimen>
 </resources>

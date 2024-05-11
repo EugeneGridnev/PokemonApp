@@ -6,4 +6,16 @@
     </style>
 
     <style name="Theme.PokemonApp" parent="Base.Theme.PokemonApp" />
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/card_corner_size</item>
+    </style>
+
+    <style name="cardTextViewStyle">
+        <item name="android:layout_marginStart">@dimen/card_text_view_style_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_text_view_style_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/card_text_view_style_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/card_text_view_style_margin_vertical</item>
+    </style>
 </resources>
