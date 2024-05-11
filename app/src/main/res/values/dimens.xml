@@ -12,4 +12,10 @@
 
     <dimen name="card_text_view_style_margin_horizontal">10dp</dimen>
     <dimen name="card_text_view_style_margin_vertical">4dp</dimen>
+
+    <dimen name="error_min_height">56dp</dimen>
+    <dimen name="error_padding">4dp</dimen>
+
+    <dimen name="progress_padding">4dp</dimen>
+    <dimen name="progress_height">56dp</dimen>
 </resources>

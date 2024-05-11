@@ -26,7 +26,7 @@ class PokemonsPagingSource(
             val response = pokemonsRepository.getPokemons(pageSize, skip)
 
             if (response.isSuccessful) {
-                val products = checkNotNull(response.body()).pokemons.map { pokemon ->
+                val pokemons = checkNotNull(response.body()).results.map { pokemon ->
                     Pokemon(
                         name = pokemon.name,
                         url = pokemon.url
@@ -34,11 +34,11 @@ class PokemonsPagingSource(
                 }
 
                 val nextPageNumber =
-                    if (skip + products.size >= (response.body()?.count ?: pageSize)) null
+                    if (skip + pokemons.size >= (response.body()?.count ?: pageSize)) null
                     else pageNumber + 1
                 val prevPageNumber = if (pageNumber == 0) null else pageNumber - 1
 
-                return LoadResult.Page(products, prevPageNumber, nextPageNumber)
+                return LoadResult.Page(pokemons, prevPageNumber, nextPageNumber)
             } else {
                 return LoadResult.Error(HttpException(response))
             }

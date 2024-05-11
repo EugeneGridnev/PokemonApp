@@ -9,7 +9,7 @@ import ru.eugeneproj.pokemon.databinding.ItemPokemonLayoutBinding
 class PokemonViewHolder(private val binding: ItemPokemonLayoutBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(pokemon: Pokemon, pokemonId: Int) {
+    fun bind(pokemon: Pokemon, pokemonId: Int?) {
 
         with(binding) {
             Glide.with(itemView)

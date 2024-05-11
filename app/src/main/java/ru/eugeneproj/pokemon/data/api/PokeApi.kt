@@ -7,7 +7,7 @@ import retrofit2.http.Query
 import ru.eugeneproj.pokemon.data.model.PokemonResponse
 
 interface PokeApi {
-    @GET("/pokemon")
+    @GET("pokemon")
     suspend fun getPokemons(
         @Query("limit")
         limit: Int,

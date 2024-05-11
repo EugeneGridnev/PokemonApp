@@ -27,9 +27,11 @@ class PokemonsPagingAdapter(private val onItemClickListener: ((Pokemon) -> Unit)
 
         val pokemon = getItem(position) ?: return
         val pokemonId = pokemon.url.toUri().lastPathSegment?.toInt()
-        holder.bind(pokemon, pokemonId!!)
-        holder.itemView.setOnClickListener {
-            onItemClickListener?.invoke(pokemon)
+        with(holder) {
+            bind(pokemon, pokemonId)
+            itemView.setOnClickListener {
+                onItemClickListener?.invoke(pokemon)
+            }
         }
     }
 
