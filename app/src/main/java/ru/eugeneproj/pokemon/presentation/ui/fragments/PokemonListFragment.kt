@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
 import ru.eugeneproj.pokemon.databinding.FragmentPokemonListBinding
 
+@AndroidEntryPoint
 class PokemonListFragment : Fragment() {
 
     private var _binding: FragmentPokemonListBinding? = null
