@@ -12,4 +12,6 @@
     <string name="pokemon_special_attack">Специальная-атака:</string>
     <string name="pokemon_special_defense">Специальная-защита:</string>
     <string name="pokemon_speed">Скорость:</string>
+    <string name="error_default_message">Что-то пошло не так! Попробуйте обновиться.</string>
+    <string name="retry_button_text">Обновить</string>
 </resources>
