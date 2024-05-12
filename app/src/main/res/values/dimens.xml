@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_margin_for_pokemons_list_views">8dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_margin">4dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_image_width">60dp</dimen>
+    <dimen name="card_image_height">60dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="card_corner_size">5dp</dimen>
+
+    <dimen name="card_text_view_style_margin_horizontal">10dp</dimen>
+    <dimen name="card_text_view_style_margin_vertical">4dp</dimen>
+
+    <dimen name="error_min_height">56dp</dimen>
+    <dimen name="error_padding">4dp</dimen>
+
+    <dimen name="progress_padding">4dp</dimen>
+    <dimen name="progress_height">56dp</dimen>
+
+    <dimen name="pokemon_image_view_height">170dp</dimen>
+    <dimen name="pokemon_image_view_width">150dp</dimen>
+
+    <dimen name="pokemon_image_margin">10dp</dimen>
+
+    <dimen name="pokemon_fragment_main_text_margin_top">3dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_bottom">3dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_start">32dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_end">32dp</dimen>
+
+    <dimen name="pokemon_fragment_text_margin_start">0dp</dimen>
+    <dimen name="pokemon_fragment_text_margin_end">32dp</dimen>
+
+    <dimen name="pokemon_fragment_titles_margin_start">32dp</dimen>
+    <dimen name="pokemon_fragment_titles_margin_end">5dp</dimen>
+
+    <dimen name="retry_error_image_height">100dp</dimen>
+    <dimen name="retry_error_image_width">100dp</dimen>
+
+    <dimen name="error_retry_message_horizontal_margin">40dp</dimen>
+    <dimen name="error_retry_message_top_margin">8dp</dimen>
+
+    <dimen name="retry_button_margin_top">20dp</dimen>
+</resources>

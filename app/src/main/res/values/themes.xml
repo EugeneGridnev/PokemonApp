@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.PokemonApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -6,4 +6,35 @@
     </style>
 
     <style name="Theme.PokemonApp" parent="Base.Theme.PokemonApp" />
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/card_corner_size</item>
+    </style>
+
+    <style name="cardTextViewStyle">
+        <item name="android:layout_marginStart">@dimen/card_text_view_style_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_text_view_style_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/card_text_view_style_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/card_text_view_style_margin_vertical</item>
+    </style>
+
+    <style name="pokemonFragmentMainText">
+        <item name="android:layout_marginTop">@dimen/pokemon_fragment_main_text_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/pokemon_fragment_main_text_margin_bottom
+        </item>
+        <item name="android:layout_marginStart">@dimen/pokemon_fragment_main_text_margin_start
+        </item>
+        <item name="android:layout_marginEnd">@dimen/pokemon_fragment_main_text_margin_end</item>
+    </style>
+
+    <style name="pokemonFragmentText" parent="pokemonFragmentMainText">
+        <item name="android:layout_marginStart">@dimen/pokemon_fragment_text_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/pokemon_fragment_text_margin_end</item>
+    </style>
+
+    <style name="pokemonFragmentTitles" parent="pokemonFragmentText">
+        <item name="android:layout_marginStart">@dimen/pokemon_fragment_titles_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/pokemon_fragment_titles_margin_end</item>
+    </style>
 </resources>
