@@ -18,4 +18,20 @@
 
     <dimen name="progress_padding">4dp</dimen>
     <dimen name="progress_height">56dp</dimen>
+
+    <dimen name="pokemon_image_view_height">170dp</dimen>
+    <dimen name="pokemon_image_view_width">150dp</dimen>
+
+    <dimen name="pokemon_image_margin">10dp</dimen>
+
+    <dimen name="pokemon_fragment_main_text_margin_top">3dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_bottom">3dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_start">32dp</dimen>
+    <dimen name="pokemon_fragment_main_text_margin_end">32dp</dimen>
+
+    <dimen name="pokemon_fragment_text_margin_start">0dp</dimen>
+    <dimen name="pokemon_fragment_text_margin_end">32dp</dimen>
+
+    <dimen name="pokemon_fragment_titles_margin_start">32dp</dimen>
+    <dimen name="pokemon_fragment_titles_margin_end">5dp</dimen>
 </resources>
