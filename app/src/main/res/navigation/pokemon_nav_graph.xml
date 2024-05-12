@@ -9,7 +9,7 @@
         android:id="@+id/pokemonListFragment"
         android:name="ru.eugeneproj.pokemon.presentation.ui.fragments.PokemonListFragment"
         android:label="fragment_pokemon_list"
-        tools:layout="@layout/fragment_pokemon_list" >
+        tools:layout="@layout/fragment_pokemon_list">
         <action
             android:id="@+id/action_pokemonListFragment_to_pokemonDescriptionFragment"
             app:destination="@id/pokemonDescriptionFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/pokemonDescriptionFragment"
         android:name="ru.eugeneproj.pokemon.presentation.ui.fragments.PokemonDescriptionFragment"
         android:label="fragment_pokemon_description"
-        tools:layout="@layout/fragment_pokemon_description" >
+        tools:layout="@layout/fragment_pokemon_description">
         <argument
             android:name="pokemonName"
             app:argType="string" />
@@ -31,7 +31,7 @@
     <fragment
         android:id="@+id/errorFragment"
         android:name="ru.eugeneproj.pokemon.presentation.ui.fragments.ErrorFragment"
-        android:label="ErrorFragment" >
+        android:label="ErrorFragment">
         <action
             android:id="@+id/action_errorFragment_to_pokemonDescriptionFragment"
             app:destination="@id/pokemonDescriptionFragment"

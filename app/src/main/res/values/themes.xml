@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.PokemonApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -23,7 +23,8 @@
         <item name="android:layout_marginTop">@dimen/pokemon_fragment_main_text_margin_top</item>
         <item name="android:layout_marginBottom">@dimen/pokemon_fragment_main_text_margin_bottom
         </item>
-        <item name="android:layout_marginStart">@dimen/pokemon_fragment_main_text_margin_start</item>
+        <item name="android:layout_marginStart">@dimen/pokemon_fragment_main_text_margin_start
+        </item>
         <item name="android:layout_marginEnd">@dimen/pokemon_fragment_main_text_margin_end</item>
     </style>
 

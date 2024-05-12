@@ -100,12 +100,14 @@ class PokemonDescriptionFragment : Fragment() {
             textViewPokemonHeight.text = "$heightM m"
             textViewPokemonType.text = pokemonInfo.types.joinToString(", ") { it.type.name }
             pokemonInfo.stats.forEach {
-                when(it.stat.name) {
+                when (it.stat.name) {
                     "hp" -> textViewPokemonHP.text = it.statValue.toString()
                     "attack" -> textViewPokemonAttack.text = it.statValue.toString()
                     "defense" -> textViewPokemonDefense.text = it.statValue.toString()
                     "special-attack" -> textViewPokemonSpecialAttack.text = it.statValue.toString()
-                    "special-defense" -> textViewPokemonSpecialDefense.text = it.statValue.toString()
+                    "special-defense" -> textViewPokemonSpecialDefense.text =
+                        it.statValue.toString()
+
                     "speed" -> textViewPokemonSpeed.text = it.statValue.toString()
                 }
             }

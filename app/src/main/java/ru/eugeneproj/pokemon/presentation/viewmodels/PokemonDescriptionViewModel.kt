@@ -14,9 +14,10 @@ import javax.inject.Inject
 @HiltViewModel
 class PokemonDescriptionViewModel @Inject constructor(
     private val pokemonsRepository: PokemonsRepository
-): ViewModel() {
+) : ViewModel() {
 
-    private val _descriptionState: MutableStateFlow<DescriptionFragmentState> = MutableStateFlow(DescriptionFragmentState.Loading)
+    private val _descriptionState: MutableStateFlow<DescriptionFragmentState> =
+        MutableStateFlow(DescriptionFragmentState.Loading)
     val description: StateFlow<DescriptionFragmentState> = _descriptionState
 
     fun getPokemonInfo(pokemonName: String) {

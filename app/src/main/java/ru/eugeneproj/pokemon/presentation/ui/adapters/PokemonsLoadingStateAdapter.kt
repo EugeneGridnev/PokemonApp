@@ -24,7 +24,11 @@ class PokemonsLoadingStateAdapter : LoadStateAdapter<ListStateViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, loadState: LoadState): ListStateViewHolder {
         return when (loadState) {
             LoadState.Loading -> LoadingStateViewHolder(LayoutInflater.from(parent.context), parent)
-            is LoadState.Error -> ErrorListStateViewHolder(LayoutInflater.from(parent.context), parent)
+            is LoadState.Error -> ErrorListStateViewHolder(
+                LayoutInflater.from(parent.context),
+                parent
+            )
+
             is LoadState.NotLoading -> error("Not supported")
         }
     }
