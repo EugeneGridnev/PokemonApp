@@ -1,5 +1,8 @@
 package ru.eugeneproj.pokemon.data.model.pokemoninfomodel
 
+import com.google.gson.annotations.SerializedName
+
 data class Sprites(
-    val front_default: String
+    @SerializedName("front_default")
+    val frontDefault: String
 )

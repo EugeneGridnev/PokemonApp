@@ -19,7 +19,7 @@
                 android:layout_width="@dimen/pokemon_image_view_width"
                 android:layout_height="@dimen/pokemon_image_view_height"
                 android:layout_margin="@dimen/pokemon_image_margin"
-                android:scaleType="fitXY"
+                android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundedImageView"
                 app:layout_constraintDimensionRatio="@string/ratio"
                 app:layout_constraintEnd_toEndOf="parent"
