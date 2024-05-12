@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import ru.eugeneproj.pokemon.databinding.FragmentErrorBinding
 
 class ErrorFragment : Fragment() {
@@ -13,7 +15,7 @@ class ErrorFragment : Fragment() {
     private val binding: FragmentErrorBinding
         get() = _binding!!
 
-
+    private val args: ErrorFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +37,8 @@ class ErrorFragment : Fragment() {
     }
 
     private fun setOnRetryClick() {
-
+        val action =
+            ErrorFragmentDirections.actionErrorFragmentToPokemonDescriptionFragment(args.pokemonName)
+        binding.repeatButton.setOnClickListener { findNavController().navigate(action) }
     }
 }

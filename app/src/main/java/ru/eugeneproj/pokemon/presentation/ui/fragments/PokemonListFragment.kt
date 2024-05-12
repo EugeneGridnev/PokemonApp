@@ -15,9 +15,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import ru.eugeneproj.pokemon.R
 import ru.eugeneproj.pokemon.databinding.FragmentPokemonListBinding
@@ -59,12 +57,13 @@ class PokemonListFragment : Fragment() {
     private fun setUpPokemonsList() {
 
         pokemonsAdapter = PokemonsPagingAdapter(
-            onItemClickListener = { onPokemonClick(it.url) }
+            onItemClickListener = { onPokemonClick(it.name) }
         )
 
         with(binding) {
             recyclerViewPokemons.layoutManager = LinearLayoutManager(context)
-            recyclerViewPokemons.adapter = pokemonsAdapter.withLoadStateFooter(PokemonsLoadingStateAdapter())
+            recyclerViewPokemons.adapter =
+                pokemonsAdapter.withLoadStateFooter(PokemonsLoadingStateAdapter())
 
             initSwipeToRefresh(pokemonsAdapter)
 
@@ -91,11 +90,11 @@ class PokemonListFragment : Fragment() {
         }
     }
 
-    private fun onPokemonClick(pokemonUrl: String) {
+    private fun onPokemonClick(pokemonName: String) {
 
         val action =
             PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDescriptionFragment(
-                pokemonUrl
+                pokemonName
             )
         findNavController().navigate(action)
 
