@@ -3,7 +3,7 @@ package ru.eugeneproj.pokemon.data.network.repository.paging
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import retrofit2.HttpException
-import ru.eugeneproj.pokemon.data.model.Pokemon
+import ru.eugeneproj.pokemon.data.model.listitemmodel.Pokemon
 import ru.eugeneproj.pokemon.data.network.repository.PokemonsRepository
 import ru.eugeneproj.pokemon.data.util.Constants
 

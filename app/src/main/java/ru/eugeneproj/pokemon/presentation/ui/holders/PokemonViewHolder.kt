@@ -3,7 +3,7 @@ package ru.eugeneproj.pokemon.presentation.ui.holders
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.eugeneproj.pokemon.R
-import ru.eugeneproj.pokemon.data.model.Pokemon
+import ru.eugeneproj.pokemon.data.model.listitemmodel.Pokemon
 import ru.eugeneproj.pokemon.databinding.ItemPokemonLayoutBinding
 
 class PokemonViewHolder(private val binding: ItemPokemonLayoutBinding) :

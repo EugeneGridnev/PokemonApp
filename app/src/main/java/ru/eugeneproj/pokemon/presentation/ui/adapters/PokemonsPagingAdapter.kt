@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import ru.eugeneproj.pokemon.data.model.Pokemon
+import ru.eugeneproj.pokemon.data.model.listitemmodel.Pokemon
 import ru.eugeneproj.pokemon.databinding.ItemPokemonLayoutBinding
 import ru.eugeneproj.pokemon.presentation.ui.holders.PokemonViewHolder
 

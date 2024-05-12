@@ -4,7 +4,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 import retrofit2.http.Query
-import ru.eugeneproj.pokemon.data.model.PokemonResponse
+import ru.eugeneproj.pokemon.data.model.listitemmodel.PokemonResponse
 
 interface PokeApi {
     @GET("pokemon")
