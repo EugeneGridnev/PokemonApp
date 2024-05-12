@@ -144,14 +144,10 @@ class PokemonListFragment : Fragment() {
     private fun observeNetworkState() {
 
         viewModel.isOnline.observe(viewLifecycleOwner) { isOnline ->
-            if (isOnline) {
-                pokemonsAdapter.retry()
-            } else {
-                Toast.makeText(
-                    context,
-                    resources.getString(R.string.network_error_message),
-                    Toast.LENGTH_SHORT
-                ).show()
+            when (isOnline) {
+                true -> pokemonsAdapter.retry()
+                false -> Toast.makeText(context, resources.getString(R.string.network_error_message), Toast.LENGTH_SHORT).show()
+                null -> {}
             }
         }
     }

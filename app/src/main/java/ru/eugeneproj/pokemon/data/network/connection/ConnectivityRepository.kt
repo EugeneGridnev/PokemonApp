@@ -4,5 +4,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface ConnectivityRepository {
 
-    val isConnected: Flow<Boolean>
+    val isConnected: Flow<Boolean?>
 }

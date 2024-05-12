@@ -6,15 +6,17 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ConnectivityRepositoryIMPL @Inject constructor(@ApplicationContext context: Context) :
     ConnectivityRepository {
 
     private val connectivityManager =
         context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
-    private val _isConnected = MutableStateFlow(false)
-    override val isConnected: Flow<Boolean> = _isConnected
+    private val _isConnected = MutableStateFlow<Boolean?>(null)
+    override val isConnected: Flow<Boolean?> = _isConnected
 
     init {
 
